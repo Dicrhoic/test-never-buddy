@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './nav-body.component.html',
   styleUrls: ['./nav-body.component.css'],
 })
-export class NavBodyComponent {
-
-}
+export class NavBodyComponent {}

@@ -3,15 +3,15 @@
 <div class="menuNavBar">
     <button class="tablinks" onclick="openNav(event, 'GachaLog')">Gacha Log</button>
     <button class="tablinks">GW Teams</button>  
-    <button class="tablinks" onclick="loadLoginForm()" id="loginBtn">Login</button>
-    <button class="tablinks" id="signoutBtn" style.display='none' onclick="logout()">Log out</button>
+    <button class="tablinks" (click)="loadLoginForm()" id="loginBtn">Login</button>
+    <button class="tablinks" id="signoutBtn" [style.display]="'none'" onclick="logout()">Log out</button>
 </div>
 <p id="debug">Test debugger</p>
 <div id="login" class="modal">
     <form class="modal-content animate">
       <div class="imgcontainer">
         <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="./assests/loginIcon.png" alt="Avatar" class="avatar">
+        <img src="https://gbf.wiki/images/6/66/Summon_b_2040411000.png" alt="Avatar" class="avatar">
       </div>
       <div class="container">
         <label for="uname"><b>Username</b></label>
